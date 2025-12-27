@@ -1,0 +1,76 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Начало",
+      "year": 2010,
+      "genre": "Фантастика, Триллер",
+      "director": "Кристофер Нолан",
+      "duration": "148 мин",
+      "rating": 8.8,
+      "description": "Профессиональный вор Доминик Кобб крадет ценные секреты из подсознания своих жертв во время сна, когда человеческий разум наиболее уязвим.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg",
+      "trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0"
+    },
+    {
+      "id": 2,
+      "title": "Побег из Шоушенка",
+      "year": 1994,
+      "genre": "Драма",
+      "director": "Фрэнк Дарабонт",
+      "duration": "142 мин",
+      "rating": 9.3,
+      "description": "Двое заключенных заводят дружбу на протяжении многих лет, находя утешение и возможное искупление через акты простой доброты.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+      "trailer": "https://www.youtube.com/watch?v=6hB3S9bIaco"
+    },
+    {
+      "id": 3,
+      "title": "Крестный отец",
+      "year": 1972,
+      "genre": "Криминал, Драма",
+      "director": "Фрэнсис Форд Коппола",
+      "duration": "175 мин",
+      "rating": 9.2,
+      "description": "Стареющий патриарх организованной преступной династии передает контроль своему неохотному сыну.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg",
+      "trailer": "https://www.youtube.com/watch?v=sY1S34973zA"
+    },
+    {
+      "id": 4,
+      "title": "Темный рыцарь",
+      "year": 2008,
+      "genre": "Боевик, Криминал, Драма",
+      "director": "Кристофер Нолан",
+      "duration": "152 мин",
+      "rating": 9.0,
+      "description": "Когда в Готэме появляется угроза в лице Джокера, Бэтмен должен противостоять хаосу, который тот создает.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg",
+      "trailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY"
+    },
+    {
+      "id": 5,
+      "title": "Форрест Гамп",
+      "year": 1994,
+      "genre": "Драма, Романтика",
+      "director": "Роберт Земекис",
+      "duration": "142 мин",
+      "rating": 8.8,
+      "description": "История жизни Форреста Гампа, человека с низким IQ, который невольно становится участником важных исторических событий.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg",
+      "trailer": "https://www.youtube.com/watch?v=bLvqoHBptjg"
+    },
+    {
+      "id": 6,
+      "title": "Интерстеллар",
+      "year": 2014,
+      "genre": "Приключения, Драма, Фантастика",
+      "director": "Кристофер Нолан",
+      "duration": "169 мин",
+      "rating": 8.6,
+      "description": "Группа исследователей использует недавно обнаруженный пространственно-временной тоннель, чтобы обойти ограничения космических путешествий человека.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
+      "trailer": "https://www.youtube.com/watch?v=zSWdZVtXT7E"
+    }
+  ]
+}

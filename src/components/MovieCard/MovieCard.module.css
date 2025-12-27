@@ -1,0 +1,281 @@
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  animation: card__appear 0.5s ease-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card__image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card__image {
+  transform: scale(1.05);
+}
+
+.card__content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.card__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.card__year {
+  background: #f8f9fa;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.card__genre {
+  flex-grow: 1;
+  text-align: right;
+  padding-left: 10px;
+}
+
+.card__director {
+  margin: 0 0 10px;
+  color: #34495e;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.card__description {
+  margin: 0 0 15px;
+  color: #546e7a;
+  font-size: 14px;
+  line-height: 1.5;
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.card__duration {
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.card__rating {
+  background: #3498db;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@keyframes card__appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Модальное окно */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: modal__fadeIn 0.3s ease-out;
+}
+
+.modal__content {
+  background: white;
+  border-radius: 20px;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: modal__slideIn 0.4s ease-out;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.modal__close:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: rotate(90deg);
+}
+
+.modal__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.modal__info {
+  padding: 30px;
+}
+
+.modal__title {
+  margin: 0 0 15px;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.modal__details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.modal__detail {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.modal__label {
+  display: block;
+  color: #7f8c8d;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.modal__value {
+  display: block;
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.modal__description {
+  margin: 0 0 25px;
+  color: #546e7a;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.modal__trailer {
+  display: inline-block;
+  background: #e74c3c;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.modal__trailer:hover {
+  background: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+@keyframes modal__fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modal__slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (min-width: 768px) {
+  .modal__body {
+    flex-direction: row;
+  }
+  
+  .modal__image {
+    width: 300px;
+    height: auto;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal__content {
+    max-height: 95vh;
+  }
+  
+  .modal__title {
+    font-size: 22px;
+  }
+  
+  .modal__info {
+    padding: 20px;
+  }
+}
